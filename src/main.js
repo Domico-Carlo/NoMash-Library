@@ -2,7 +2,7 @@
 // import '@/assets/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { createApp } from 'vue'
+import { createApp, ref } from 'vue'
 import App from './App.vue'
 import router from './router'
 
@@ -24,3 +24,11 @@ app.use(router)
 // app.component('Column', Column)
 
 app.mount('#app')
+
+const roles = ref({
+    'user1@gmail.com': 'Admin',
+    'user2@gmail.com': 'User',
+    'user3@gmail.com': 'role'
+})
+
+export { roles }
