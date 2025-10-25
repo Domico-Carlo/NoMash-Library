@@ -67,7 +67,7 @@ const routes = [
 const isAuthenticated = ref(false)
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
